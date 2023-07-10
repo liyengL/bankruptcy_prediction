@@ -38,9 +38,6 @@ Refer to the provided instructions in the repository to set up the environment, 
 
 The model's performance was evaluated using various metrics, such as accuracy, precision, recall, and F1 score.
 
-## Contributing
-
-Contributions to this repository are welcome! Feel free to submit pull requests for improvements or new features.
 
 ## License
 
