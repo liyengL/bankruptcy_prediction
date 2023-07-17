@@ -1,6 +1,6 @@
 # Bankruptcy Prediction Model
 
-This repository contains a machine learning model for predicting bankruptcy. The model is trained on historical financial data and uses various algorithms and techniques to classify whether a company is at risk of bankruptcy or not.
+This is a project during my graduate studies using machine learning to predict bankruptcy in Spain. 
 
 ## Introduction
 
@@ -8,39 +8,40 @@ This machine learning model predicts the likelihood of bankruptcy by analyzing h
 
 ## Dataset
 
-The dataset used for training and evaluating the model is not included in this repository due to licensing restrictions. You can obtain the dataset from [source link] and follow the provided instructions to preprocess the data.
-
-## Data Cleaning
-
-Thorough data cleaning procedures were performed to handle missing values, outliers, and ensure data consistency.
+The dataset contains 106057 rows and 52 columns. Moreover, when it comes to the dependent variable, status, it has 100'000 instances of 0 and 6057 instances of 1. 
 
 ## Data Exploration
 
 An in-depth analysis of the dataset was conducted, including descriptive statistics and visualizations, to gain insights into its characteristics and understand the distribution of bankruptcy instances.
 
-## Missing Values
 
-Missing values in the dataset were addressed, resulting in a cleaned dataset with reduced missing entries.
+## Data Cleaning
 
-## Dealing with Outliers
+Thorough data cleaning procedures were performed to handle missing values, outliers, and ensure data consistency.
+
+### Missing Values
+
+Missing values in the dataset were addressed. We first cleaned the missing data based on the columns. Then, we observed that some companies contain many missing columns. To address this, we perform some threshold trial to see the best way to clean this data. 
+
+### Dealing with Outliers
 
 Outliers were analyzed, and it was observed that removing them might negatively impact the model. Therefore, the outliers were not dealt with, and their impact on the model's performance was evaluated.
 
-## Correlation Check
+### Correlation Check
 
 A correlation matrix was examined, highlighting strong linear relationships between financial ratios and growth rates. These correlations provide insights into a company's financial health and performance.
 
-## Installation and Usage
-
-Refer to the provided instructions in the repository to set up the environment, install dependencies, and utilize the bankruptcy prediction model.
 
 ## Model Evaluation
 
-The model's performance was evaluated using various metrics, such as accuracy, precision, recall, and F1 score.
+As we have a large dataset, we decided to divide the dataset based on different years and trained the model. We have trained a model for year 2013, 2014, 2015 and 2016. To avoid overfitting, we have tested the model with the following years. The model's performance was evaluated using various metrics, such as accuracy, precision and recall.
 
+## Interpretation
 
-## License
+The interpretation of the model is done by tree and shapley values. 
 
-This project is licensed under the MIT License, allowing you to use, modify, and distribute the code for personal or commercial purposes.
+## Application 
+
+This model is especially useful for consulting firms or banks when dealing with loans for companies. 
 
 
